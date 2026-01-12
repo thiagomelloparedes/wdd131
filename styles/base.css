@@ -20,9 +20,8 @@ body {
     color: #111;
 }
 
-h1,
-h2 {
-    font-family: "Merriweather", serif;
+h1, h2 {
+  font-family: "Merriweather", serif;
 }
 
 /* ===== HEADER ===== */
@@ -33,7 +32,6 @@ header {
 
 #course-title {
     display: block;
-    /* REQUIRED */
     text-align: center;
     font-size: 1.25rem;
     padding: 16px 12px;
@@ -41,11 +39,10 @@ header {
     letter-spacing: .2px;
 }
 
-/* NAV uses Flex (REQUIRED) */
+/* NAV uses Flex */
 nav {
     background: var(--dark);
     display: flex;
-    /* REQUIRED */
     justify-content: space-around;
     align-items: center;
     gap: 10px;
@@ -60,7 +57,7 @@ nav a {
     transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
-/* Hover effect (REQUIRED) */
+/* Hover effect */
 nav a:hover {
     background: rgba(255, 255, 255, 0.15);
     transform: translateY(-1px);
@@ -75,8 +72,6 @@ nav a:focus-visible {
 main {
     width: min(1100px, 92%);
     margin: 18px auto 28px;
-
-    /* Cards layout using CSS Grid (REQUIRED) */
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 18px;
