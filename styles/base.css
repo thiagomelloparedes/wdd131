@@ -16,8 +16,13 @@
 body {
     margin: 0;
     background: var(--bg);
-    font-family: var(--font-body);
+    font-family: "Roboto", Arial, sans-serif;
     color: #111;
+}
+
+h1,
+h2 {
+    font-family: "Merriweather", serif;
 }
 
 /* ===== HEADER ===== */
