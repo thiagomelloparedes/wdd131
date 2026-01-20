@@ -12,7 +12,7 @@ body {
 
 /* HEADER (mobile) */
 header {
-    background: #3b1466;
+    background: #0f1c68;
     color: #fff;
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +53,7 @@ nav {
 
 .navigation {
     list-style: none;
-    background: #3b1466;
+    background: #0f1c68;
 }
 
 .navigation a {
@@ -128,7 +128,7 @@ figcaption {
 
 /* FOOTER */
 footer {
-    background: #3b1466;
+    background: #0f1c68;
     color: #fff;
     text-align: center;
     padding: 1rem;
