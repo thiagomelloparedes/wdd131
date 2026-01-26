@@ -24,12 +24,13 @@
             <!-- HERO first (mobile wireframe) -->
             <section id="media" aria-label="Main hero image">
                 <picture>
-                    <!-- Desktop image -->
-                    <source media="(min-width: 980px)" srcset="images/peru-hero-desktop.webp" type="image/webp" />
+                    <!-- Desktop image (explicit srcset) -->
+                    <source media="(min-width: 980px)" srcset="images/peru-hero-desktop.webp 1600w" sizes="100vw"
+                        type="image/webp">
 
-                    <!-- Mobile fallback image -->
-                    <img src="images/peru-hero-mobile.webp" alt="View of Machu Picchu in Peru." width="800"
-                        height="1200" loading="lazy" decoding="async">
+                    <!-- Mobile fallback image (explicit srcset) -->
+                    <img src="images/peru-hero-mobile.webp" srcset="images/peru-hero-mobile.webp 800w" sizes="100vw"
+                        alt="View of Machu Picchu in Peru." width="800" height="1200" loading="lazy" decoding="async">
                 </picture>
             </section>
 
