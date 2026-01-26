@@ -120,18 +120,14 @@ dd {
 /* Footer */
 footer {
     background: var(--primary);
-    /* rojo (tu variable) */
     color: #fff;
-    /* texto blanco */
     text-align: center;
     padding: 18px 16px;
     margin-top: 18px;
 
     border-top: none;
-    /* quita la línea roja de arriba */
 }
 
 footer p {
     margin: 6px 0;
-    /* separa las líneas como en el ejemplo */
 }
