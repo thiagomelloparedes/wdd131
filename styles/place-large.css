@@ -1,0 +1,41 @@
+@media (min-width: 980px) {
+
+    .layout {
+        /* 3 columnas como el wireframe desktop */
+        grid-template-columns: 280px 1fr 280px;
+        align-items: start;
+    }
+
+    /* HERO ocupa “todo” el ancho del área */
+    #media {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        min-height: 520px;
+        position: relative;
+    }
+
+    /* Cards “encima” del hero (izq y der), como el wireframe */
+    #data {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+        z-index: 2;
+    }
+
+    #weather {
+        grid-column: 3;
+        grid-row: 1;
+        align-self: center;
+        z-index: 2;
+    }
+
+    /* En desktop, el ícono debe ser un emoticon via pseudo-element */
+    .weather-svg {
+        display: none;
+    }
+
+    #weather h2::after {
+        content: " ⛅";
+        font-size: 1.1em;
+    }
+}

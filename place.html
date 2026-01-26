@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page - Thiago Mello WDD131</title>
+    <meta name="author" content="Thiago Mello">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Peru</h1>
+    </header>
+
+    <main>
+        <section class="layout">
+
+            <!-- HERO first (mobile wireframe) -->
+            <section id="media" aria-label="Main hero image">
+                <picture>
+                    <!-- Desktop image -->
+                    <source media="(min-width: 980px)" srcset="images/peru-hero-desktop.webp" type="image/webp" />
+
+                    <!-- Mobile fallback image -->
+                    <img src="images/peru-hero-mobile.webp" alt="View of Machu Picchu in Peru." width="800"
+                        height="1200" loading="lazy" decoding="async">
+                </picture>
+            </section>
+
+            <!-- Data (below image on mobile; left on desktop via CSS) -->
+            <aside id="data">
+                <h2>Data</h2>
+                <dl>
+                    <dt>Area:</dt>
+                    <dd>1,285,216 km²</dd>
+                    <dt>Population:</dt>
+                    <dd>34,000,000</dd>
+                    <dt>Capital:</dt>
+                    <dd>Lima</dd>
+                    <dt>Languages:</dt>
+                    <dd>Spanish, Quechua, Aymara</dd>
+                    <dt>Currency:</dt>
+                    <dd>Sol (PEN)</dd>
+                    <dt>Time Zone:</dt>
+                    <dd>UTC−5</dd>
+                    <dt>Calling Code:</dt>
+                    <dd>+51</dd>
+                </dl>
+            </aside>
+
+            <!-- Weather (below data on mobile; right on desktop via CSS) -->
+            <aside id="weather">
+                <div class="weather-head">
+                    <h2>Weather</h2>
+
+                    <!-- SVG icon for mobile view -->
+                    <img class="weather-svg" src="images/weather.svg" alt="Weather icon">
+                </div>
+
+                <dl>
+                    <!-- Static values (match what JS uses) -->
+                    <dt>Temperature:</dt>
+                    <dd><span id="temp">8</span> °C</dd>
+                    <dt>Conditions:</dt>
+                    <dd>Partly Cloudy</dd>
+                    <dt>Wind:</dt>
+                    <dd><span id="wind">12</span> km/h</dd>
+                    <dt>Wind Chill:</dt>
+                    <dd><span id="windchill">N/A</span></dd>
+                </dl>
+            </aside>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Thiago Alexandre Mello Paredes • Peru</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
