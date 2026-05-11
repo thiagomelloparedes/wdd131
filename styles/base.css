@@ -16,10 +16,6 @@ h2 {
     font-family: "Merriweather", serif;
 }
 
-header span {
-    display: block;
-}
-
 .layout { 
     display: grid;
     grid-template-rows: auto 1fr auto;
