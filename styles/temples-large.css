@@ -1,0 +1,39 @@
+@media (min-width: 37.5em) {
+
+    /* ocultar hamburger en desktop */
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1rem;
+        background: transparent;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.25rem 0.6rem;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+        font-size: 1.3rem;
+    }
+
+    figure img {
+        max-width: 240px;
+        aspect-ratio: 4 / 3;
+    }
+}
