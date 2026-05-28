@@ -1,10 +1,9 @@
 :root {
-    /* Peru-inspired palette */
     --bg: #ffffff;
     --text: #111111;
     --muted: #444444;
 
-    --primary: #d91023;
+    --primary: #005a2b;
     /* red */
     --primary-dark: #b50c1a;
     --card-bg: #ffffff;
@@ -14,6 +13,7 @@
     --shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
 
     --maxw: 1100px;
+    
     --gap: 18px;
     --pad: 16px;
 }
