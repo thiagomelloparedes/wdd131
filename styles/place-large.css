@@ -1,0 +1,37 @@
+@media (min-width: 980px) {
+
+    .layout {
+        grid-template-columns: 280px 1fr 280px;
+        align-items: start;
+    }
+
+    #media {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        min-height: 520px;
+        position: relative;
+    }
+
+    #data {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+        z-index: 2;
+    }
+
+    #weather {
+        grid-column: 3;
+        grid-row: 1;
+        align-self: center;
+        z-index: 2;
+    }
+
+    .weather-svg {
+        display: none;
+    }
+
+    #weather h2::after {
+        content: " ⛅";
+        font-size: 1.1em;
+    }
+}
