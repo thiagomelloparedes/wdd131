@@ -1,0 +1,40 @@
+@media (min-width: 37.5em) {
+
+    /* hide hamburger on desktop */
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1rem;
+        background: transparent;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.25rem 0.6rem;
+    }
+
+    main h1 {
+        font-size: 1.3rem;
+    }
+
+    /* 3 columns on larger screens */
+    #temples {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* slightly smaller images on desktop */
+    #temples img {
+        max-width: 240px;
+        aspect-ratio: 4 / 3;
+    }
+}
