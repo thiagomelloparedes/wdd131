@@ -147,7 +147,6 @@ code {
     opacity: 0.9;
 }
 
-/* Simple responsiveness */
 @media (min-width: 700px) {
     .swatches {
         grid-template-columns: 1fr 1fr;
