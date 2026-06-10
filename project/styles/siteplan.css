@@ -1,0 +1,155 @@
+:root {
+    --bg: #0B1020;
+    --text: #EAF0FF;
+    --accent: #2D7DFF;
+    --card: rgba(255, 255, 255, 0.06);
+    --border: rgba(255, 255, 255, 0.14);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.site-header,
+.site-footer {
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+}
+
+.site-footer {
+    border-top: 1px solid var(--border);
+    border-bottom: 0;
+}
+
+.logo {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+}
+
+.tagline {
+    margin: 0.25rem 0 0;
+    opacity: 0.9;
+}
+
+h1 {
+    font-family: Montserrat, sans-serif;
+    margin: 1rem 0 0.5rem;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+    margin: 0 0 0.5rem;
+    padding-left: 0.75rem;
+    border-left: 4px solid var(--accent);
+}
+
+h3 {
+    font-family: Montserrat, sans-serif;
+    margin: 1rem 0 0.5rem;
+}
+
+a {
+    color: var(--accent);
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.note {
+    opacity: 0.9;
+}
+
+.swatches {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.swatch-item {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.75rem;
+}
+
+.swatch {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    flex: 0 0 auto;
+}
+
+.swatch-bg {
+    background: #0B1020;
+}
+
+.swatch-accent {
+    background: #2D7DFF;
+}
+
+.sample {
+    margin: 0.5rem 0 0;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.montserrat {
+    font-family: Montserrat, sans-serif;
+}
+
+.roboto {
+    font-family: Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+.wireframe {
+    margin: 0.5rem 0 0;
+    padding: 0.75rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: rgba(0, 0, 0, 0.25);
+    overflow-x: auto;
+}
+
+code {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0.1rem 0.35rem;
+    border-radius: 8px;
+}
+
+.footer-muted {
+    opacity: 0.9;
+}
+
+/* Simple responsiveness */
+@media (min-width: 700px) {
+    .swatches {
+        grid-template-columns: 1fr 1fr;
+    }
+}

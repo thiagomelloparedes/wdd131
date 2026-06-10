@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site Plan | Streaming Series Hub</title>
+    <meta name="description"
+        content="Website planning document for Streaming Series Hub (WDD131). Includes site name, purpose, scenarios, color scheme, typography, wireframes, and sitemap.">
+    <meta name="author" content="Thiago Mello Paredes">
+
+    <!-- Google Fonts (Typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="logo">📺 Streaming Series Hub</p>
+            <p class="tagline">W05 Project: Website Planning Document</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Website Plan</h1>
+
+        <section id="site-name" class="card">
+            <h2>Site Name</h2>
+            <p><strong>Name:</strong> Streaming Series Hub</p>
+            <p><strong>Logo:</strong> 📺 Streaming Series Hub</p>
+            <p>
+                <strong>Reason:</strong> The name is simple and easy to remember. It clearly communicates that the
+                website is a central place (“hub”) for television series recommendations from popular streaming
+                platforms.
+            </p>
+            <p><strong>Optional domain:</strong> streamingserieshub.com (example only)</p>
+        </section>
+
+        <section id="site-purpose" class="card">
+            <h2>Site Purpose</h2>
+            <p>
+                Streaming Series Hub provides curated lists of recommended television series from Netflix, Disney+,
+                Prime Video, HBO Max, and Apple TV+. The site helps users quickly discover series by browsing top picks,
+                using a simple search/filter, and submitting suggestions through a form.
+            </p>
+        </section>
+
+        <section id="scenarios" class="card">
+            <h2>Scenarios</h2>
+            <ul>
+                <li>“What are the top recommended Netflix series for someone who likes drama?”</li>
+                <li>“How can I quickly find science fiction series on Prime Video?”</li>
+                <li>“Where can I submit a series suggestion to be added to the site?”</li>
+            </ul>
+        </section>
+
+        <section id="color-scheme" class="card">
+            <h2>Color Scheme</h2>
+            <p class="note">
+                The selected colors are used on this site plan document (background, headings, links, and accents).
+            </p>
+
+            <div class="swatches">
+                <div class="swatch-item">
+                    <span class="swatch swatch-bg" aria-hidden="true"></span>
+                    <div>
+                        <p><strong>#0B1020 (Dark Navy)</strong></p>
+                        <p>Used for the page background and header/footer background.</p>
+                    </div>
+                </div>
+
+                <div class="swatch-item">
+                    <span class="swatch swatch-accent" aria-hidden="true"></span>
+                    <div>
+                        <p><strong>#2D7DFF (Blue Accent)</strong></p>
+                        <p>Used for headings, links, and button accents.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography" class="card">
+            <h2>Typography</h2>
+            <ul>
+                <li><strong>Orbitron:</strong> Used for the site name/logo and headings.</li>
+                <li><strong>Roboto:</strong> Used for body text, paragraphs, and lists.</li>
+            </ul>
+            <p class="sample orbitron">Orbitron sample: Streaming Series Hub</p>
+            <p class="sample roboto">Roboto sample: This is body text for descriptions and paragraphs.</p>
+        </section>
+
+        <section id="wireframes" class="card">
+            <h2>Wireframes (Home Page)</h2>
+
+            <h3>Mobile View</h3>
+            <pre class="wireframe">
+[Header: Logo]
+[Navigation: stacked links]
+[Hero/Intro text]
+[Section: Streaming Platforms (5 cards stacked)]
+[Section: Featured Top Series (list/cards)]
+[Footer]
+      </pre>
+
+            <h3>Desktop View</h3>
+            <pre class="wireframe">
+[Header: Logo | Navigation inline]
+[Hero/Intro across width]
+[Streaming Platforms: cards in a row/grid]
+[Featured Top Series: grid of cards]
+[Footer]
+      </pre>
+        </section>
+
+        <section id="sitemap" class="card">
+            <h2>Planned Pages (Sitemap)</h2>
+            <ul>
+                <li><code>index.html</code> — Home</li>
+                <li><code>top-series.html</code> — Top Series (filter/search)</li>
+                <li><code>suggestions.html</code> — Suggestions (form)</li>
+                <li><code>references.html</code> — References (unstyled, linked in footer)</li>
+            </ul>
+            <p class="note">
+                These filenames follow course naming conventions (lowercase, hyphenated, no spaces).
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                Planning document for WDD131. Future site footer will link to
+                <span class="footer-muted">references.html</span>.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
