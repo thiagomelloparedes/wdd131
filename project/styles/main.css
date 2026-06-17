@@ -40,8 +40,8 @@ img {
     width: 1px;
     height: 1px;
     overflow: hidden;
-    background: var(--bg);
-    color: var(--text);
+    background: #0B1020;
+    color: #EAF0FF;
 }
 
 .skip-link:focus {
