@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Streaming Series Hub | Home</title>
+    <meta name="description"
+        content="Curated television series recommendations for Netflix, Disney+, Prime Video, HBO Max, and Apple TV+. Find top picks, filter by genre, sort by rating/year, and save favorites.">
+    <meta name="author" content="Thiago Mello Paredes">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <p class="brand">📺 Streaming Series Hub</p>
+
+            <nav aria-label="Primary navigation">
+                <ul class="nav">
+                    <li><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
+                    <li><a class="nav-link" href="top-series.html">Top Series</a></li>
+                    <li><a class="nav-link" href="suggestions.html">Suggestions</a></li>
+                    <li>
+                        <a class="nav-link" href="top-series.html#favorites">
+                            Favorites <span id="favCount" class="badge">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container">
+        <section class="hero card">
+            <div>
+                <h1>Find your next series faster.</h1>
+                <p class="muted">
+                    Browse curated top picks by streaming platform. Filter by genre, sort by rating/year,
+                    and save your favorite series.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn" href="top-series.html">Browse Top Series</a>
+                    <a class="btn btn-ghost" href="suggestions.html">Suggest a Series</a>
+                </div>
+            </div>
+
+            <section class="platforms" aria-labelledby="platformsTitle">
+                <h2 id="platformsTitle" class="sr-only">Streaming platforms supported</h2>
+
+                <div class="platform-chip">
+                    <img src="images/netflix.svg" alt="Netflix logo" width="28" height="28" loading="lazy">
+                    <span>Netflix</span>
+                </div>
+
+                <div class="platform-chip">
+                    <img src="images/disneyplus.svg" alt="Disney Plus logo" width="28" height="28" loading="lazy">
+                    <span>Disney+</span>
+                </div>
+
+                <div class="platform-chip">
+                    <img src="images/primevideo.svg" alt="Prime Video logo" width="28" height="28" loading="lazy">
+                    <span>Prime Video</span>
+                </div>
+
+                <div class="platform-chip">
+                    <img src="images/hbomax.svg" alt="HBO Max logo" width="28" height="28" loading="lazy">
+                    <span>HBO Max</span>
+                </div>
+
+                <div class="platform-chip">
+                    <img src="images/appletv.svg" alt="Apple TV Plus logo" width="28" height="28" loading="lazy">
+                    <span>Apple TV+</span>
+                </div>
+            </section>
+        </section>
+
+        <section class="card">
+            <div class="section-title">
+                <h2>Featured Picks</h2>
+                <p class="muted">A few popular series from the catalog.</p>
+            </div>
+
+            <div id="featuredGrid" class="cards-grid" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="currentyear"></span> Streaming Series Hub | WDD131</p>
+            <p id="lastModified"></p>
+            <p><a href="references.html">References</a></p>
+        </div>
+    </footer>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/home.js"></script>
+</body>
+
+</html>

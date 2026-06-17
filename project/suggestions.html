@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Streaming Series Hub | Suggestions</title>
+    <meta name="description" content="Suggest a television series to add to Streaming Series Hub.">
+    <meta name="author" content="Thiago Mello Paredes">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <p class="brand">📺 Streaming Series Hub</p>
+
+            <nav aria-label="Primary navigation">
+                <ul class="nav">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="top-series.html">Top Series</a></li>
+                    <li><a class="nav-link" href="suggestions.html" aria-current="page">Suggestions</a></li>
+                    <li>
+                        <a class="nav-link" href="top-series.html#favorites">
+                            Favorites <span id="favCount" class="badge">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container">
+        <section class="card">
+            <div class="section-title">
+                <h1>Suggest a Series</h1>
+                <p class="muted">Submit a suggestion. It will be stored locally for this class project.</p>
+            </div>
+
+            <form id="suggestForm" class="form" method="get" action="suggestions.html">
+                <div class="field">
+                    <label for="title">Series Title <span class="req" aria-hidden="true">*</span></label>
+                    <input id="title" name="title" type="text" required placeholder="e.g., Stranger Things">
+                </div>
+
+                <div class="field">
+                    <label for="platform">Platform <span class="req" aria-hidden="true">*</span></label>
+                    <select id="platform" name="platform" required>
+                        <option value="" disabled selected>Select a platform...</option>
+                        <option value="Netflix">Netflix</option>
+                        <option value="Disney+">Disney+</option>
+                        <option value="Prime Video">Prime Video</option>
+                        <option value="HBO Max">HBO Max</option>
+                        <option value="Apple TV+">Apple TV+</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="genre">Genre</label>
+                    <input id="genre" name="genre" type="text" placeholder="e.g., Drama">
+                </div>
+
+                <div class="field">
+                    <label for="why">Why do you recommend it?</label>
+                    <textarea id="why" name="why" rows="4" placeholder="Short reason (optional)"></textarea>
+                </div>
+
+                <div class="field">
+                    <label for="name">Your Name</label>
+                    <input id="name" name="name" type="text" placeholder="Optional">
+                </div>
+
+                <p class="muted small">Fields marked with * are required.</p>
+
+                <div class="form-actions">
+                    <input class="btn" type="submit" value="Submit Suggestion">
+                    <button class="btn btn-ghost" type="reset">Clear</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="submitted" class="card" hidden>
+            <h2>Thank you!</h2>
+            <p id="submitMsg"></p>
+            <p><strong>Total suggestions submitted on this device:</strong> <span id="suggestCount">0</span></p>
+        </section>
+
+        <section class="card">
+            <div class="section-title">
+                <h2>Recent Suggestions</h2>
+                <p class="muted">Loaded from localStorage.</p>
+            </div>
+
+            <div id="suggestionsList" class="suggestions" aria-live="polite"></div>
+
+            <button type="button" class="btn btn-ghost" id="clearSuggestionsBtn">Clear Suggestions</button>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="currentyear"></span> Streaming Series Hub | WDD131</p>
+            <p id="lastModified"></p>
+            <p><a href="references.html">References</a></p>
+        </div>
+    </footer>
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/suggestions.js"></script>
+</body>
+
+</html>
