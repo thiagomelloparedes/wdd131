@@ -4,7 +4,8 @@
     --muted: rgba(234, 240, 255, 0.85);
     --card: rgba(255, 255, 255, 0.06);
     --border: rgba(255, 255, 255, 0.14);
-    --accent: #2D7DFF;
+    --accent: #1A56C5;
+    --link: #7CF7D4;
     --accent2: #7CF7D4;
 }
 
@@ -106,8 +107,8 @@ img {
 }
 
 .nav-link[aria-current="page"] {
-    border-color: rgba(45, 125, 255, 0.7);
-    box-shadow: 0 0 0 2px rgba(45, 125, 255, 0.2);
+    border-color: rgba(124, 247, 212, 0.75);
+    box-shadow: 0 0 0 2px rgba(124, 247, 212, 0.2);
 }
 
 .badge {
@@ -118,8 +119,8 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 999px;
-    background: rgba(45, 125, 255, 0.25);
-    border: 1px solid rgba(45, 125, 255, 0.45);
+    background: rgba(124, 247, 212, 0.2);
+    border: 1px solid rgba(124, 247, 212, 0.45);
     font-size: 0.85rem;
 }
 
@@ -137,8 +138,9 @@ img {
     justify-content: space-between;
 }
 
+a,
 .site-footer a {
-    color: var(--accent);
+    color: var(--link);
 }
 
 h1,
@@ -214,7 +216,7 @@ p {
 input:focus,
 select:focus,
 textarea:focus {
-    outline: 3px solid rgba(45, 125, 255, 0.5);
+    outline: 3px solid rgba(124, 247, 212, 0.5);
     outline-offset: 2px;
 }
 
